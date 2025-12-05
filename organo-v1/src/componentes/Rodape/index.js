@@ -12,21 +12,26 @@ const Rodape = () => {
                 <ul>
                     {/* Cada <li> representa um item da lista */}
                     <li>
-                        {/* Link para o Facebook — target="_blank" abre em nova aba */}
-                        <a href="https://facebook.com" target="_blank">
+                        {/* 
+                            Link para o Facebook — target="_blank" abre em nova aba.
+                            Adicionamos rel="noopener noreferrer" para evitar warnings de segurança.
+                        */}
+                        <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
                             {/* Imagem do ícone do Facebook */}
                             <img src="/imagens/fb.png" alt="Logo do Facebook" />
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://twitter.com" target="_blank">
+                        {/* Link para o Twitter */}
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
                             <img src="/imagens/tw.png" alt="Logo do Twitter" />
                         </a>
                     </li>
 
                     <li>
-                        <a href="https://instagram.com" target="_blank">
+                        {/* Link para o Instagram */}
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
                             <img src="/imagens/ig.png" alt="Logo do Instagram" />
                         </a>
                     </li>
