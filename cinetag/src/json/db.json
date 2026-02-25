@@ -1,5 +1,4 @@
-{
-    "videos": [
+[
     {
         "id": 1,
         "titulo": "O labirinto do Logcat",
@@ -25,4 +24,3 @@
         "link": "https://www.youtube.com/embed/LLmBWjF6F8M"
     }
 ]
-}
