@@ -1,7 +1,23 @@
 .cabecalho {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1em;
+  background-color: var(--preto);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  .cabecalho {
+    padding: 1em 4em;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .cabecalho {
     padding: 1.1em 20em;
-    background-color: var(--preto);
+  }
 }

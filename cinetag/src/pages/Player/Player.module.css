@@ -1,3 +1,67 @@
-iframe{
-    height: 80vh;
+.playerWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.videoContainer {
+  width: 100%;
+  max-width: 900px;
+  aspect-ratio: 16 / 9;
+
+  border-radius: 16px;
+  overflow: hidden;
+
+  box-shadow: 
+    0 10px 30px rgba(0, 0, 0, 0.6),
+    0 0 0 1px rgba(255, 255, 255, 0.05);
+
+  transition: transform 0.3s ease;
+}
+
+.videoContainer:hover {
+  transform: scale(1.02);
+}
+/* iframe */
+.videoContainer iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* ============================================
+   RESPONSIVIDADE CORRIGIDA
+   ============================================ */
+
+
+@media (max-width: 1024px) {
+  .videoContainer {
+    transform: none;
+    
+  }
+
+  .videoContainer:hover {
+    transform: scale(1.02);
+  }
+}
+
+/* Notebook (tablet grande / laptop pequeno) */
+@media (max-width: 1024px) {
+  .videoContainer {
+    max-width: 100%; /* 🔥 usa toda largura disponível */
+  }
+}
+
+
+/* mobile + tablet */
+@media (max-width: 768px) {
+  .videoContainer {
+    transform: none;
+    
+  }
+
+  .videoContainer:hover {
+    transform: scale(1.02);
+  }
+  
 }

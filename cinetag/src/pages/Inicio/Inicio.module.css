@@ -1,4 +1,31 @@
 .container {
-    display: flex;
-    justify-content: space-around;
+  display: grid;
+  gap: 24px;
+  color: black;
+
+  grid-template-columns: repeat(auto-fit, 260px);
+
+  justify-content: center;
+
+  margin: 0 auto;
+  padding: 16px;
+
+  /* 👇 AJUSTE FINO AQUI */
+  transform: translateX(-96px);
+}
+/* Tablet */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: repeat(1, 250px);
+    justify-content: center;
+    transform: translateX(0);
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container {
+    grid-template-columns: repeat(auto-fit, 250px);
+    justify-content: center;
+  }
 }

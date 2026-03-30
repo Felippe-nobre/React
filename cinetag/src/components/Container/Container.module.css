@@ -1,4 +1,18 @@
 .container section {
-    margin: 2em 20em;
-    text-align: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+/* Tablet */
+@media (min-width: 768px) {
+  .container section {
+    margin: 2em 3em;
+  }
+}
+
+/* Desktop */
+@media (min-width: 1024px) {
+  .container section {
+    margin: 2em 6em;
+  }
 }
