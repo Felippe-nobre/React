@@ -1,0 +1,1 @@
+npm i --save typescript @types/node @types/react @types/react-dom @types/jest isso serve para intalar o typescript
